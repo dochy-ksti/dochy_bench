@@ -8,7 +8,7 @@ use super::{
 
 const REPEAT: usize = 3;
 #[allow(dead_code)]
-//#[test]
+#[test]
 fn bench_repeatedly() {
     for _ in 0..REPEAT {
         save_1gb_bench().unwrap();
