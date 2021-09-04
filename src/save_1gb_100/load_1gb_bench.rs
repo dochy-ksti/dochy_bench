@@ -8,7 +8,7 @@ use dochy::{
     },
 };
 
-#[test]
+//#[test]
 pub(crate) fn load_1gb_bench() -> DpResult<()> {
     let history_dir = "src/save_1gb_100/history_dir";
 

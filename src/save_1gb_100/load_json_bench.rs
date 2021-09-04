@@ -4,7 +4,7 @@ use rand::{thread_rng, Rng};
 use std::time::Instant;
 
 #[allow(dead_code)]
-#[test]
+//#[test]
 pub(crate) fn load_json_bench() -> DpResult<()> {
     let json_dir = "src/save_1gb_100/dat_dir";
     let mut rng = thread_rng();

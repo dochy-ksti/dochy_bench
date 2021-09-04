@@ -4,7 +4,7 @@ use dochy::error::DpResult;
 use dochy::intf::generate_interface;
 
 #[allow(dead_code)]
-#[test]
+//#[test]
 fn save_1gb_generate() -> DpResult<()> {
     let mut root_obj: RootObject = json_dir_to_root("src/save_1gb_100/src_dir", true)?;
 
