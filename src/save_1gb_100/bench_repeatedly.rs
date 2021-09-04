@@ -43,3 +43,22 @@ fn bench_repeatedly() {
 // 356 milliseconds
 // sum of file sizes 173612107
 
+// Save時にCompactionでArc<Vec<u8>>を使ってコピーを避ける最適化を施した。多少マシになったか・・・？
+// test save_1gb_100::bench_repeatedly::bench_repeatedly ... 613 milliseconds
+// sum of file sizes 168005163
+// 662 milliseconds
+// sum of file sizes 173005171
+// 604 milliseconds
+// sum of file sizes 176005217
+// 2012 milliseconds
+// sum of file sizes 1021436034
+// 1934 milliseconds
+// sum of file sizes 1021436196
+// 1906 milliseconds
+// sum of file sizes 1021435957
+// 378 milliseconds
+// sum of file sizes 173571238
+// 338 milliseconds
+// sum of file sizes 173570901
+// 343 milliseconds
+// sum of file sizes 173571122
