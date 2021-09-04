@@ -21,6 +21,7 @@ pub(crate) struct DataJson {
     data9: String,
 }
 
+//#[test]
 pub(crate) fn save_1gb_json_bench() -> DpResult<()> {
     let json_dir = "src/save_1gb_100/dat_dir";
     std::fs::remove_dir_all(json_dir).ok();
