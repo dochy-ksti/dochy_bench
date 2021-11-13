@@ -33,9 +33,9 @@ pub(crate) fn save_1gb_bench() -> DpResult<()> {
 
     let his = list_histories(&info)?;
     let hash_dir = his
-        .get_newest_file_data()?
+        .get_newest_file_data().unwrap()
         .calc_path(history_dir)
-        .parent()?
+        .parent().unwrap()
         .to_path_buf();
     let lens = get_file_lens(&hash_dir, "his")?;
     let sum_files = lens.iter().fold(0, |sum, fl| sum + fl.len());

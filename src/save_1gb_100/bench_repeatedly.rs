@@ -8,7 +8,7 @@ use super::{
 
 const REPEAT: usize = 3;
 #[allow(dead_code)]
-#[test]
+//#[test]
 fn bench_repeatedly() {
     for _ in 0..REPEAT {
         save_1gb_bench().unwrap();
@@ -19,9 +19,9 @@ fn bench_repeatedly() {
     for _ in 0..REPEAT {
         save_1gb_json_impl(VEC_SIZE, LOOP).unwrap();
     }
-    for _ in 0..REPEAT {
-        save_1gb_json_impl(VEC_SIZE / 100 * 17, LOOP).unwrap();
-    }
+    // for _ in 0..REPEAT {
+    //     save_1gb_json_impl(VEC_SIZE / 100 * 17, LOOP).unwrap();
+    // }
 }
 
 // 712 milliseconds
